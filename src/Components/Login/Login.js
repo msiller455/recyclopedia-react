@@ -4,7 +4,13 @@ import { Link, withRouter } from 'react-router-dom'
 class Login extends Component {
     state = {
         username: '',
-        password: ''
+        password: '',
+        message: ''
+    }
+    componentDidMount() {
+        this.setState({
+            message: this.props.message
+        })
     }
     
     handleChange = (e) => {
@@ -22,6 +28,7 @@ class Login extends Component {
         return (
             <div className="Login">
                 <h1>Login</h1>
+                <h4 className="loginMessage">{this.state.message}</h4>
                 <form onSubmit={this.handleLoginSubmit}>
                     <label>
                         Username:

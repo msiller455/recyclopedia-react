@@ -7,10 +7,10 @@ class NavBar extends Component {
         return(
             <div className="navBar">
                 {
-                    !this.props.currentUser.id ?
+                    !this.props.currentUser ?
                         [<Link className="navBarLink" to="/login">Login</Link>, 
                         ' | ',
-                        <Link className="navBarLink" to="#">Register</Link>]
+                        <Link className="navBarLink" to="/register">Register</Link>]
                     : [<span>Hello, {this.props.currentUser.username}</span>]
                 }
             </div>

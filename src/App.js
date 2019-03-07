@@ -8,22 +8,34 @@ import axios from 'axios'
 
 class App extends Component {
   state = {
-    currentUser: ''
+    currentUser: '',
+    message: ''
   }
 
   handleLogin = (data) => {
     axios.post('http://localhost:3030/users/login', data)
       .then(res => {
-        this.setState({currentUser: res.data})
-        // this.props.history.push('/home')
+        this.setState({
+          currentUser: res.data,
+          message: 'Welcome back!'
+        })
+        this.props.history.push('/home')
       })
   }
 
   handleRegister = (data) => {
     axios.post('http://localhost:3030/users', data)
       .then(res => {
-        this.setState({currentUser: res.data})
-        // this.props.history.push('/home')
+        if(res.data.username){
+          this.setState({
+            currentUser: res.data,
+            message: 'Welcome to Recyclopedia!'
+          })
+          this.props.history.push('/home')
+        } else {
+          this.setState({message: res.data})
+          this.props.history.push('/register')
+        }
       })
   }
 
@@ -33,7 +45,7 @@ class App extends Component {
         <NavBar currentUser={this.state.currentUser}/>
         <Switch>
           <Route exact path={'/login'} component={() => <Login handleLogin={this.handleLogin}/>}/>
-          <Route exact path={'/register'} component={() => <Register handleRegister={this.handleRegister}/>}/>
+          <Route exact path={'/register'} component={() => <Register message={this.state.message} handleRegister={this.handleRegister}/>}/>
         </Switch>
       </div>
     )
