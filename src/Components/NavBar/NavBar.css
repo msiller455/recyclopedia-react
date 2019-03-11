@@ -1,0 +1,26 @@
+.navBar {
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    height: 4rem;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Varela Round', sans-serif;
+    padding: 1rem;
+}
+
+
+.navBarLink {
+    text-decoration: none;
+}
+
+.navBarLink:visited {
+    color: black;
+}
+
+.navBarLink:hover {
+    font-weight: 600;
+}

@@ -1,0 +1,64 @@
+.splashImage {
+    position: absolute;
+    z-index: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../../Resources/Images/purple-sky.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.Login {
+    background-color: rgba(255, 255, 255, 0.418);
+    margin: auto;
+    height: 20rem;
+    width: 20rem;
+    font-family: 'Oxygen', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Login h1 {
+    margin: 1rem 0;
+}
+
+.loginMessage {
+    color: red;
+}
+
+.loginForm {
+    width: 10rem;
+    font-family: 'Oxygen', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.loginForm label, input{
+    margin: 0.25rem 0;
+}
+
+.loginForm button {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1rem;
+    margin-top: 1rem;
+    background-color: #45A3D7;
+    height: 3rem;
+    width: 10rem;
+    border-radius: 20px;
+}
+
+.loginForm button:active {
+    background-color: white;
+    color: black;
+}
