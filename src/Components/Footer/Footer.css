@@ -1,0 +1,26 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 4rem;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Varela Round', sans-serif;
+    padding: 1rem;
+}
+
+.mediaLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.footerButton img {
+    height: 25px;
+    width: 25px;
+    margin: .5rem;
+}
