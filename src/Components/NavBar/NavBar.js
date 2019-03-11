@@ -25,7 +25,7 @@ class NavBar extends Component {
                             ' | ',
                             <Link className="navBarLink" to="#">Post New Event</Link>,
                             ' | ',
-                            <Link className="navBarLink" to="#">Search Users</Link>,
+                            <Link className="navBarLink" to="/users">Search Users</Link>,
                             ' | ',
                             <Link className="navBarLink" to="#">Search Events</Link>,
                             ' | ',
