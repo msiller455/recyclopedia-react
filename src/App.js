@@ -8,6 +8,7 @@ import Splash from './Components/Splash/Splash'
 import Home from './Components/Home/Home'
 import Footer from './Components/Footer/Footer'
 import EditUser from './Components/EditUser/EditUser'
+import Users from './Components/Users/Users'
 import axios from 'axios'
 
 
@@ -43,8 +44,7 @@ class App extends Component {
       .then(res => {
         if(res.data.isCreated) {
           this.setState({
-            currentUser: res.data.createdUser,
-            message: 'Welcome to Recyclopedia!'
+            currentUser: res.data.createdUser
           })
           this.props.history.push('/home')
         } else {
@@ -101,6 +101,7 @@ class App extends Component {
           <Route exact path={'/register'} component={() => <Register message={this.state.message} currentUser={this.state.currentUser} handleRegister={this.handleRegister}/>}/>
           <Route exact path={'/home'} component={() => <Home currentUser={this.state.currentUser}/>} />
           <Route exact path={'/editUser'} component={() => <EditUser handleLogout={this.handleLogout} message={this.state.message} currentUser={this.state.currentUser} handleEdit={this.handleEdit}/>} />
+          <Route exact path={'/users'} component={() => <Users currentUser={this.state.currentUser} /> } />
         </Switch>
         <Footer />
       </div>
