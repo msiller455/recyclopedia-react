@@ -9,6 +9,8 @@ import Home from './Components/Home/Home'
 import Footer from './Components/Footer/Footer'
 import EditUser from './Components/EditUser/EditUser'
 import Users from './Components/Users/Users'
+import UserShow from './Components/UserShow/UserShow'
+import CreateCleanUp from './Components/CreateCleanUp/CreateCleanUp'
 import axios from 'axios'
 
 
@@ -99,9 +101,12 @@ class App extends Component {
           <Route exact path={'/'} component={() => <Splash />} />
           <Route exact path={'/login'} component={() => <Login message={this.state.message} currentUser={this.state.currentUser} handleLogin={this.handleLogin}/>}/>
           <Route exact path={'/register'} component={() => <Register message={this.state.message} currentUser={this.state.currentUser} handleRegister={this.handleRegister}/>}/>
-          <Route exact path={'/home'} component={() => <Home currentUser={this.state.currentUser}/>} />
-          <Route exact path={'/editUser'} component={() => <EditUser handleLogout={this.handleLogout} message={this.state.message} currentUser={this.state.currentUser} handleEdit={this.handleEdit}/>} />
-          <Route exact path={'/users'} component={() => <Users currentUser={this.state.currentUser} /> } />
+          <Route exact path={'/home'} component={() => <Home currentUser={this.state.currentUser}/>}/>
+          <Route exact path={'/editUser'} component={() => <EditUser handleLogout={this.handleLogout} message={this.state.message} currentUser={this.state.currentUser} handleEdit={this.handleEdit}/>}/>
+          <Route exact path={'/users'} component={() => <Users currentUser={this.state.currentUser} />}/>
+          <Route exact path={'/users/:id'} component={() => <UserShow currentUser={this.state.currentUser} />}/>
+          <Route exact path={'/createCleanUp'} component={() => <CreateCleanUp currentUser={this.state.currentUser} />}/>
+          <Route exact path={'/events'} component={() => <Users currentUser={this.state.currentUser}/>}/>
         </Switch>
         <Footer />
       </div>
