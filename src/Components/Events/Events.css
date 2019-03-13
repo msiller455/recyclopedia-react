@@ -1,0 +1,24 @@
+.events {
+    background-image: url('../../Resources/Images/beach-sunrise.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.events .content {
+    background-color: rgba(255, 255, 255, 0.418);
+    display: flex;
+    margin: auto;
+    height: 30rem;
+    width: 30rem;
+    font-family: 'Oxygen', sans-serif;
+}
+
+/* .events .content ul li {
+
+} */

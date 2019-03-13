@@ -33,7 +33,7 @@ class EditUser extends Component {
 
     render() {
         return (
-            <div className="splashImage">
+            <div className="editImage">
                 <div className="editUser">
                     <h1>Edit Profile</h1>
                     <h4 className="editMessage">{this.props.message}</h4>
