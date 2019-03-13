@@ -28,15 +28,15 @@ class CreateCleanUp extends Component {
             })
     }
 
-    getSites = async() => {
-        axios.get('https://api.coastal.ca.gov/ccd/v1/locations')
-            .then(res => {
-                const allSites = res.data.filter({county_region: this.state.county_region})
-                this.setState({
-                    sites: allSites
-                })
-            })
-    }
+    // getSites = async() => {
+    //     axios.get('https://api.coastal.ca.gov/ccd/v1/locations')
+    //         .then(res => {
+    //             const allSites = res.data.filter({county_region: this.state.county_region})
+    //             this.setState({
+    //                 sites: allSites
+    //             })
+    //         })
+    // }
 
     handleCountyChange = (e) => {
         this.setState({
@@ -53,10 +53,12 @@ class CreateCleanUp extends Component {
 
     handleEventSubmit = async(e) => {
         e.preventDefault()
+        const event = this.state.filterLocations.filter(location => location.site_name === this.state.site_name)
         const data = {
             county_region: this.state.county_region,
             site_name: this.state.site_name,
-            created_by: this.props.currentUser._id
+            created_by: this.props.currentUser._id,
+            event_id: event[0].id
         }
         this.createEvent(data) 
             
@@ -65,7 +67,7 @@ class CreateCleanUp extends Component {
     createEvent = (data) => {
         axios.post('http://localhost:3030/events', data)
             .then(res => {
-                // this.props.history.push('/events')
+                this.props.history.push('/events')
             })
     }
 
@@ -107,4 +109,4 @@ class CreateCleanUp extends Component {
     }
 }
 
-export default CreateCleanUp
+export default withRouter(CreateCleanUp)

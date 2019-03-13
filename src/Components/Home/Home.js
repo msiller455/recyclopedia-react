@@ -13,15 +13,6 @@ class Home extends Component {
                         <Link className="homeLink" to="/editUser"><h4>Edit Profile</h4></Link>
                     </div>
                 </div>
-                <div className="feeds">
-                    <div className="eventFeed">
-                        <h3>Event Feed</h3>
-                        
-                    </div>
-                    <div className="friendFeed">
-                        <h3>Friends Feed</h3>
-                    </div>
-                </div>
             </div>
         )
     }

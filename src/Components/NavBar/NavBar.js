@@ -27,7 +27,7 @@ class NavBar extends Component {
                             ' | ',
                             <Link className="navBarLink" to="/users">Search Users</Link>,
                             ' | ',
-                            <Link className="navBarLink" to="#">Search Clean-Up</Link>,
+                            <Link className="navBarLink" to="/events">Search Clean-Up</Link>,
                             ' | ',
                             <a href="#" className="navBarLink" onClick={this.props.handleLogout}>Logout</a>]
                     }
