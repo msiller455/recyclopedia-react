@@ -1,24 +1,9 @@
-.splashImage {
-    position: absolute;
-    z-index: 0;
-    height: 100vh;
-    width: 100vw;
-    background-image: url('../../Resources/Images/purple-sky.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-}
 
-.Login {
-    background-color: rgba(255, 255, 255, 0.418);
-    margin: auto;
-    height: 20rem;
-    width: 20rem;
+.login {
+    background-image: url('../../Resources/Images/purple-sky.png');
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
     font-family: 'Oxygen', sans-serif;
     text-align: center;
     display: flex;
@@ -27,7 +12,16 @@
     align-items: center;
 }
 
-.Login h1 {
+.loginContainer {
+    background-color: rgba(255, 255, 255, 0.26);
+    padding: 3rem;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login h1 {
     margin: 1rem 0;
 }
 
@@ -49,6 +43,7 @@
 }
 
 .loginForm button {
+    color: white;
     font-family: 'Oxygen', sans-serif;
     font-size: 1rem;
     margin-top: 1rem;
@@ -61,4 +56,23 @@
 .loginForm button:active {
     background-color: white;
     color: black;
+}
+
+.loginForm button:hover {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1rem;
+    margin-top: 1rem;
+    background-color: rgb(34, 96, 129);
+    height: 3rem;
+    width: 10rem;
+    border-radius: 20px;
+}
+
+.loginInput { 
+    font-size: 1rem;
+    background: none;
+    border: none;
+    border-bottom: 2px solid black;
+    text-decoration: none;
+    outline: none;
 }

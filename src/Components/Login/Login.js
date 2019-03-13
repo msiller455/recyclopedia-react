@@ -21,19 +21,19 @@ class Login extends Component {
 
     render() {
         return (
-            <div className="splashImage">
-                <div className="Login">
+            <div className="login">
+                <div className="loginContainer">
                     <h1>Login</h1>
                     <h4 className="loginMessage">{this.props.message}</h4>
                     <form className="loginForm" onSubmit={this.handleLoginSubmit}>
                         <label>
                             Username:
                         </label>
-                        <input type="text" name="username" className="LoginInput" onChange={this.handleChange}/>
+                        <input type="text" name="username" className="loginInput" onChange={this.handleChange}/>
                         <label>
                             Password:
                         </label>
-                        <input type="password" name="password" className="LoginInput" onChange={this.handleChange}/>
+                        <input type="password" name="password" className="loginInput" onChange={this.handleChange}/>
                         <button type="submit" className="LoginButton">Login</button>
                     </form>
                 </div>

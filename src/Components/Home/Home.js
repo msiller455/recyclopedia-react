@@ -6,13 +6,14 @@ class Home extends Component {
     render() {
         return(
             <div className="home">
-                <div className="banner">
                     <div className="userInfo">
-                        <h2>{this.props.currentUser.username}</h2>
+                        <h1>{this.props.currentUser.username}</h1>
                         <Link className="homeLink" to="/friends"><h4>View Friends</h4></Link>
                         <Link className="homeLink" to="/editUser"><h4>Edit Profile</h4></Link>
                     </div>
-                </div>
+                    <div className="eventStream">
+                        <h1>Upcoming Events</h1>
+                    </div>
             </div>
         )
     }

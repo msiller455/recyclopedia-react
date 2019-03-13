@@ -24,7 +24,7 @@ class EditUser extends Component {
 
     deleteUser = async(e) => {
         e.preventDefault()
-        axios.delete(`http://localhost:3030/users/${this.props.currentUser._id}`)
+        axios.delete(`https://recyclopedia-backend.herokuapp.com/users/${this.props.currentUser._id}`)
             .then(res => {
                 console.log(res.data.deletedUser, ' ----THIS USER IS DELETED------')
                 this.props.handleLogout()

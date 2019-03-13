@@ -14,7 +14,7 @@ class UserShow extends Component {
     }
 
     getUser = async() => {
-        axios.get(`http://localhost:3030/users/${this.props.match.params.id}`)
+        axios.get(`https://recyclopedia-backend.herokuapp.com/users/${this.props.match.params.id}`)
             .then(res => {
                 this.setState({
                     user: res.data.user,
@@ -30,9 +30,8 @@ class UserShow extends Component {
                     <h1>{this.state.user.username}</h1>
                     <h3>{this.state.user.email}</h3>
                 </div>
-                <div className="addFriend"></div>
                 <div className="userEvents">
-                    <h2>Upcoming Events</h2>
+                    <h2>{this.state.user.username}'s Events</h2>
                     <ul className="userEventsList">
                     {
                         this.state.events.map((event, i) => 

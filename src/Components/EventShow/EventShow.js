@@ -15,7 +15,7 @@ class EventShow extends Component {
 
     getEvent = async() => {
         console.log(this.props)
-        // axios.get(`http://localhost:3030/events/${this.props.match.params.id}`)
+        // axios.get(`https://recyclopedia-backend.herokuapp.com/events/${this.props.match.params.id}`)
         //     .then(res => {
         //         console.log(res.data)
                 // this.setState({

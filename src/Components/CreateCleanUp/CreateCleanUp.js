@@ -65,7 +65,7 @@ class CreateCleanUp extends Component {
     }
 
     createEvent = (data) => {
-        axios.post('http://localhost:3030/events', data)
+        axios.post('https://recyclopedia-backend.herokuapp.com/events', data)
             .then(res => {
                 this.props.history.push('/events')
             })
