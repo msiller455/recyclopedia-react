@@ -1,7 +1,40 @@
 .users {
     height: 100vh;
+    background-image: url('../../Resources/Images/beach-party.png');
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.usersContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.43);
+    width: 80%;
+    height: 60%;
+    padding: 2rem;
+}
+
+.usersContainer h1 {
+    text-align: center;
+    letter-spacing: .3rem;
+    color: darkslategrey;
+}
+
+.usersContainer a {
+    text-decoration: none;
+    color: black;
+}
+
+.usersContainer a:hover {
+    font-weight: 600;
+}
+
+.usersContainer ul li {
+    list-style: none;
+    margin: .5rem;
+    text-transform: uppercase;
 }

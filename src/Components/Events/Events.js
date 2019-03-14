@@ -13,7 +13,7 @@ class Events extends Component {
     }
 
     getEvents = async() => {
-        axios.get('http://localhost:3030/events')
+        axios.get('https://recyclopedia-backend.herokuapp.com/events')
             .then(res => {
                 this.setState({
                     events: res.data.events

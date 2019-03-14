@@ -1,0 +1,16 @@
+.comingSoon {
+    font-family: 'Oxygen', sans-serif;
+    color: white;
+    height: 100vh;
+    background-image: url('../../Resources/Images/coming-soon.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comingSoon h1 {
+    background: rgba(255, 255, 255, 0.753);
+    padding: 2rem;
+    color: darkslategray;
+}

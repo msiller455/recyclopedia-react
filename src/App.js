@@ -12,6 +12,7 @@ import Users from './Components/Users/Users'
 import UserShow from './Components/UserShow/UserShow'
 import CreateCleanUp from './Components/CreateCleanUp/CreateCleanUp'
 import Events from './Components/Events/Events'
+import ComingSoon from './Components/ComingSoon/ComingSoon'
 import axios from 'axios'
 import EventShow from './Components/EventShow/EventShow';
 
@@ -24,7 +25,7 @@ class App extends Component {
 
 
   handleLogin = (data) => {
-    axios.post('http://localhost:3030/users/login', data)
+    axios.post('https://recyclopedia-backend.herokuapp.com/users/login', data)
       .then(res => {
         if(res.data.isLoggedIn) {
           this.setState({
@@ -44,7 +45,7 @@ class App extends Component {
   }
 
   handleRegister = (data) => {
-    axios.post('http://localhost:3030/users', data)
+    axios.post('https://recyclopedia-backend.herokuapp.com/users', data)
       .then(res => {
         if(res.data.isCreated) {
           this.setState({
@@ -63,7 +64,7 @@ class App extends Component {
   }
 
   handleEdit = (data) => {
-    axios.put(`http://localhost:3030/users/${this.state.currentUser._id}`, data)
+    axios.put(`https://recyclopedia-backend.herokuapp.com/users/${this.state.currentUser._id}`, data)
         .then(res => {
             if(res.data.isUpdated) {
                 this.setState({
@@ -85,7 +86,7 @@ class App extends Component {
 }
 
   handleLogout = () => {
-    axios.get('http://localhost:3030/users/logout')
+    axios.get('https://recyclopedia-backend.herokuapp.com/users/logout')
       .then(res => {
         this.setState({
           currentUser: ''
@@ -110,6 +111,7 @@ class App extends Component {
           <Route exact path={'/createCleanUp'} component={() => <CreateCleanUp currentUser={this.state.currentUser} />}/>
           <Route exact path={'/events'} component={() => <Events currentUser={this.state.currentUser}/>}/>
           <Route exact path={'/events/:id'} component={() => <EventShow currentUser={this.state.currentUser} />} />
+          <Route exact path={'/comingSoon'} component={() => <ComingSoon />} />
         </Switch>
         <Footer />
       </div>

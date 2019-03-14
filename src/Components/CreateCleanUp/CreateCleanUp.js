@@ -65,7 +65,7 @@ class CreateCleanUp extends Component {
     }
 
     createEvent = (data) => {
-        axios.post('http://localhost:3030/events', data)
+        axios.post('https://recyclopedia-backend.herokuapp.com/events', data)
             .then(res => {
                 this.props.history.push('/events')
             })
@@ -74,8 +74,8 @@ class CreateCleanUp extends Component {
     render() {
         return(
             <div className="createCleanUp">
-                <h1>Create a Beach Clean-Up Event</h1>
                 <form className="forms" onSubmit={this.handleEventSubmit}>
+                    <h1 className="formH1">Create a Beach Clean-Up Event</h1>
                     <div className="selectForms">
                         <div className="county">
                             <label>

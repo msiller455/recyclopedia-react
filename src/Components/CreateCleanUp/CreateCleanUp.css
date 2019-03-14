@@ -1,5 +1,7 @@
 .createCleanUp {
     height: 100vh;
+    background-image: url('../../Resources/Images/beach-road.jpg');
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -8,10 +10,23 @@
 
 .forms {
     height: 60%;
+    width: 50%;
+    color: darkslategray;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    background: rgba(255, 255, 255, 0.73);
+}
+
+.forms label {
+    color: black;
+    font-weight: 400;
+}
+
+.formH1 {
+    text-transform: uppercase;
+    letter-spacing: .2rem;
 }
 
 .selectForms {
@@ -33,5 +48,12 @@
 
 .forms button {
     width: 20%;
+    color: white;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1rem;
+    margin-top: 1rem;
+    background-color: #45A3D7;
+    height: 3rem;
+    border-radius: 20px;
 }
 

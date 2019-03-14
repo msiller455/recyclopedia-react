@@ -1,6 +1,6 @@
 .events {
     background-image: url('../../Resources/Images/beach-sunrise.png');
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
@@ -11,14 +11,36 @@
 }
 
 .events .content {
+    text-align: center;
     background-color: rgba(255, 255, 255, 0.418);
     display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    justify-content: flex-start;
+    align-items: center;
     margin: auto;
     height: 30rem;
     width: 30rem;
     font-family: 'Oxygen', sans-serif;
 }
 
-/* .events .content ul li {
+.content h1 {
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
 
-} */
+.events .content ul li {
+    padding: 1rem;
+    list-style: none;
+
+}
+
+
+.events .content ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.events .content ul li a:hover {
+    font-weight: 600;
+}
