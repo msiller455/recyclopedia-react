@@ -19,9 +19,9 @@ Heroku Link: https://recyclopedia1.herokuapp.com/
 
 ## Screenshots
 
-(src/Resources/Images/screenshot1.png)
+(./src/Resources/Images/screenshot1.png)
 
-(src/Resources/Images/screenshot2.png)
+(./src/Resources/Images/screenshot2.png)
 
 ## How It Works
 
