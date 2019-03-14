@@ -19,10 +19,10 @@ Heroku Link: https://recyclopedia1.herokuapp.com/
 
 ## Screenshots
 
-(https://i.imgur.com/EbGN6WW.png)
+![Splash Page](https://i.imgur.com/EbGN6WW.png)
 
 
-(https://i.imgur.com/9DOCyzh.png)
+![Create Event Page](https://i.imgur.com/9DOCyzh.png)
 
 
 
