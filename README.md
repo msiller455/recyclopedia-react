@@ -19,9 +19,12 @@ Heroku Link: https://recyclopedia1.herokuapp.com/
 
 ## Screenshots
 
-(/src/Resources/Images/screenshot1.png)
+(https://i.imgur.com/EbGN6WW.png)
 
-(/src/Resources/Images/screenshot2.png)
+
+(https://i.imgur.com/9DOCyzh.png)
+
+
 
 ## How It Works
 
