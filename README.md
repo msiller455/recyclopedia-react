@@ -36,4 +36,4 @@ Cali|Ocial uses data from the California Coastal Commission API. It gathers coun
 * Friends feature
 * Profile Pictures
 * Comments on events
-* Dates and notifcations for upcoming events
+* Dates and notifcations for upcoming events 
