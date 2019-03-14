@@ -1,6 +1,6 @@
-#cali|Ocial: The Recyclopedia Project
+# cali|Ocial: The Recyclopedia Project
 
-##Description
+## Description
 cali|Ocial is a single page CRUD app designed to be a social platform for users to organize beach or park clean up events. This site is the first part of a larger project aimed at providing resources and information to promote sustainability, the Recyclopedia Project.
 
 Heroku Link: https://recyclopedia1.herokuapp.com/
