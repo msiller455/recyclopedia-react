@@ -75,7 +75,7 @@ class CreateCleanUp extends Component {
         return(
             <div className="createCleanUp">
                 <form className="forms" onSubmit={this.handleEventSubmit}>
-                    <h1>Create a Beach Clean-Up Event</h1>
+                    <h1 className="formH1">Create a Beach Clean-Up Event</h1>
                     <div className="selectForms">
                         <div className="county">
                             <label>
