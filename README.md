@@ -1,68 +1,39 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#cali|Ocial: The Recyclopedia Project
 
-## Available Scripts
+##Description
+cali|Ocial is a single page CRUD app designed to be a social platform for users to organize beach or park clean up events. This site is the first part of a larger project aimed at providing resources and information to promote sustainability, the Recyclopedia Project.
 
-In the project directory, you can run:
+Heroku Link: https://recyclopedia1.herokuapp.com/
 
-### `npm start`
+## Technologies Used
+* Back-End
+    * Mongo Database
+    * Mongoose
+    * Express
+    * Node.JS
+* Front-End
+    * React
+* API
+    * California Coastal Commission
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Screenshots
 
-### `npm test`
+(src/Resources/Images/screenshot1.png)
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+(src/Resources/Images/screenshot2.png)
 
-### `npm run build`
+## How It Works
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Users create a profile and sign in. Users can create events to organize a group to meet up and clean a beach or park. Users can search other users and their event, or a list of all events. Users can delete their profile or logout.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## California Coastal Commission API
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Cali|Ocial uses data from the California Coastal Commission API. It gathers county and site name and location data from the API and populates forms on the 'Create Event Page' for users to select locations to clean up.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Future Plans and Unimplemented Ideas
+* Ability to join other users' events
+* Friends feature
+* Profile Pictures
+* Comments on events
+* Dates and notifcations for upcoming events
