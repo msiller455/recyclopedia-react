@@ -12,6 +12,7 @@ import Users from './Components/Users/Users'
 import UserShow from './Components/UserShow/UserShow'
 import CreateCleanUp from './Components/CreateCleanUp/CreateCleanUp'
 import Events from './Components/Events/Events'
+import ComingSoon from './Components/ComingSoon/ComingSoon'
 import axios from 'axios'
 import EventShow from './Components/EventShow/EventShow';
 
@@ -110,6 +111,7 @@ class App extends Component {
           <Route exact path={'/createCleanUp'} component={() => <CreateCleanUp currentUser={this.state.currentUser} />}/>
           <Route exact path={'/events'} component={() => <Events currentUser={this.state.currentUser}/>}/>
           <Route exact path={'/events/:id'} component={() => <EventShow currentUser={this.state.currentUser} />} />
+          <Route exact path={'/comingSoon'} component={() => <ComingSoon />} />
         </Switch>
         <Footer />
       </div>
