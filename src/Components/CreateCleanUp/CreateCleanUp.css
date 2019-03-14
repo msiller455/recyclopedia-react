@@ -19,9 +19,14 @@
     background: rgba(255, 255, 255, 0.453);
 }
 
-.fformH1 {
+.forms label {
+    color: black;
+    font-weight: 400;
+}
+
+.formH1 {
     text-transform: uppercase;
-    letter-spacing: .3rem;
+    letter-spacing: .2rem;
 }
 
 .selectForms {
@@ -43,5 +48,12 @@
 
 .forms button {
     width: 20%;
+    color: white;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1rem;
+    margin-top: 1rem;
+    background-color: #45A3D7;
+    height: 3rem;
+    border-radius: 20px;
 }
 
