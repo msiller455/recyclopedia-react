@@ -16,6 +16,7 @@
     width: 80%;
     height: 60%;
     padding: 2rem;
+    overflow: auto;
 }
 
 .usersContainer h1 {

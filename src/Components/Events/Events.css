@@ -22,6 +22,7 @@
     height: 30rem;
     width: 30rem;
     font-family: 'Oxygen', sans-serif;
+    overflow: auto;
 }
 
 .content h1 {
